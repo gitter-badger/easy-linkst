@@ -2,12 +2,13 @@
 
 class Mylist {
   +name: string
+  +description: text
 }
 
 class Link {
   +title: string
   +url: string
-  +discription: text
+  +description: text
 }
 
 class Tag {
@@ -24,10 +25,13 @@ class LinkTag {
   +tag_id: integer
 }
 
+Mylist "1" o-- "*" Mylist
 Mylist "1" o-- "*" Link
 Mylist "1" o-- "*" MylistTag
-MylistTag "1" o-- "*" Tag
+
+MylistTag "*" --o "1" Tag
+LinkTag "*" --o "1" Tag
+
 Link "1" o-- "*" LinkTag
-LinkTag "1" o-- "*" Tag
 
 @enduml
