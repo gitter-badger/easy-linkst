@@ -43,5 +43,6 @@ gem 'therubyracer'
 gem 'jquery-datatables-rails'
 gem 'redcarpet'               # markdown support
 gem 'uikit-sass-rails'
+gem 'awesome_nested_set'
 
 
