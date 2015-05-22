@@ -1,0 +1,33 @@
+@startuml{table.png}
+
+class Mylist {
+  +name: string
+}
+
+class Link {
+  +title: string
+  +url: string
+  +discription: text
+}
+
+class Tag {
+  +name: string
+}
+
+class MylistTag {
+  +mylist_id: integer
+  +tag_id: integer
+}
+
+class LinkTag {
+  +link: integer
+  +tag_id: integer
+}
+
+Mylist "1" o-- "*" Link
+Mylist "1" o-- "*" MylistTag
+MylistTag "1" o-- "*" Tag
+Link "1" o-- "*" LinkTag
+LinkTag "1" o-- "*" Tag
+
+@enduml
