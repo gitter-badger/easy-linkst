@@ -28,8 +28,10 @@ class LinkTag {
 Mylist "1" o-- "*" Mylist
 Mylist "1" o-- "*" Link
 Mylist "1" o-- "*" MylistTag
+
 MylistTag "*" --o "1" Tag
-Link "1" o-- "*" LinkTag
 LinkTag "*" --o "1" Tag
+
+Link "1" o-- "*" LinkTag
 
 @enduml
