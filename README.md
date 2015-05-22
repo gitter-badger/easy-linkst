@@ -6,4 +6,7 @@
 
 タグ付けやマイリストでカテゴライズをできるように．
 
+## table構成
+
+![table](https://raw.githubusercontent.com/MaxMEllon/easy-linkst/master/model/table.png)
 
